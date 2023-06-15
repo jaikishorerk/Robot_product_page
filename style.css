@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.heading{
+    text-align: center;
+    background-color: #ff4c68;
+    color: aliceblue;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+    color: #fff;
+}
+h2,h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.div-main{
+    width:100vw;
+    height:500px;
+    display: flex;
+    margin-top:1vh;
+    flex-direction: row;
+    
+}
+
+img{
+    width: 70%;
+    height:100%;
+    margin-left: 15%;
+}
+.div-child-left > .robo-img{
+    width: 100%;
+}
+.div-child-right{
+    
+    padding-right:30px;
+}
+.div-main > .div-child-left{
+    width:40%;
+}
+.div-main > .div-child-right{
+    width:60%;
+}
+#tab{
+    text-align: left;
+}
+ul{
+    margin-left: 25px;
+    
+}
+li{
+    padding: 5px;
+    font-size: medium;
+}
+
+#tab {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  
+  #tab td, #tab th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #tab tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #tab tr:hover {background-color: #ddd;}
+  
+  #tab th {
+    
+    text-align: left;
+    background-color: FA9884;
+    color: white;
+  }
+.des{
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+@media only screen and  (max-width:320px){
+    .heading{
+        text-align: justify;
+        
+    }
+    h1{
+        width: 300px;
+        font-size: 1.5rem;
+        line-height: 1;
+        text-align: left;
+    }
+    .div-main{
+        flex-direction: column;
+    }
+    img{
+        width: 280;
+    }
+    .div-main > .div-child-right{
+        width:100%;
+        font-size: smaller;
+    }
+    .des{
+        margin-top: 500px;
+    }
+}
